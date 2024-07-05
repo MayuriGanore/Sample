@@ -1,12 +1,15 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Hello from './Hello';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Hello from './Hello.js';
+
 const App = () => {
   return (
     <div>
-      <Routes>
-        <Route path="/hello" element={<Hello />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/hello" element={<Hello />} />
+        </Routes>
+      </Router>
     </div>
   )
 }
